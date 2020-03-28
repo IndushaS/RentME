@@ -12,7 +12,7 @@ def get_current_time():
 
 @app.route('/hello', methods=['GET'])
 def hello():
-    return 'Hello, World!'   
+    return 'Hello, Bhoomika!'   
 
 @app.route('/property/<address1>/<address2>')
 def get_data(address1,address2):

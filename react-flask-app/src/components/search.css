@@ -1,1 +1,108 @@
-.listing{display:flex; flex-direction:row;}
+body, html {
+	height: 100%;
+    font-family: Roboto;
+    color: white;
+    font-weight: 300;
+}
+.background{
+
+}
+.listing{display:flex; flex-direction:row;
+font-size: 20px;
+}
+
+.submitbutton {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 244px;
+    height: 50px;
+  
+    font-family: Roboto;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.2;
+    font-size: 39px
+  }
+  button{
+    border-radius: 12px;
+    background-color: white;
+    border-color: none;
+    color: #000;
+
+
+  }
+  button:hover{
+    border-radius: 12px;
+    background-color: rgb(55, 145, 55);
+    opacity: 60%;
+    border-color: none;
+    color: #fff;
+
+
+  }
+  .contact100-form-btn {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 244px;
+    height: 50px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    background: rgb(190, 69, 69);    
+    border-color: white;
+    border-width: 2px;
+  }
+
+  h2{
+font-weight: 900;
+font-family: Roboto, Arial, sans-serif;
+font-size: 70px;
+  }
+  label{
+    font-weight: 400;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 25px;
+  }
+  input{
+    
+   
+    width: 180px;
+    height: 30px;
+    padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid grey;
+      opacity: 60%;
+
+
+
+  }
+  input::placeholder{
+   font-weight: 200;
+   font-size: 16px;
+   color: #000;
+   opacity: 60%;
+
+
+  }
+  tr{
+      border: 1px solid black;
+  }
+.margin{
+    padding-left: 10px;
+}

@@ -51,36 +51,60 @@ class Search extends Component {
 
   render() {
     return (
+      <div class="background">
+
       <div>
-        <h2>Search</h2>
+        <h2>Find your optimal location below!</h2>
         
         <form onSubmit={this.onSubmit}>
+        <p></p>
+
         <div>
-          <label>Address 1:</label>
-          <input type="text" name="address1" placeholder="4529 Winona Court" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.address1} /> 
-          <label>City and State:</label>
-          <input type="text" name="cityState1" placeholder="Denver, CO" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.cityState1}/>
+          
+          <label>Address 1&emsp; </label>
+          <input type="text" name="address1" placeholder="Ex. 123 Street" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.address1} /> 
+          &emsp;   <label>City and State&emsp; </label>
+          <input type="text" name="cityState1" placeholder="Ex. Denver, CO" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.cityState1}/>
         </div> 
         <div>
-          <label>Address 2:</label>
-          <input type="text" name="address2" placeholder="4529 Winona Court" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.address2} />
-          <label>City and State:</label>
-          <input type="text" name="cityState2" placeholder="Denver, CO" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.cityState2}/> 
-          <div>
-          <input type="submit" value="submit"></input>
+        <p></p>
+        <p></p>
+
+          <label>Address 2&emsp; </label>
+          <input type="text" name="address2" placeholder="Ex.  123 Street" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.address2} />
+          &emsp;  <label>City and State&emsp; </label>
+          <input type="text" name="cityState2" placeholder="Ex. Denver, CO" onChange={(e) => this.inputChangeHandler.call(this, e)} value={this.state.formFields.cityState2}/> 
+          <p></p>
+          
+
+          <div class="submitbutton">
+          <p></p>
+
+          <button class="contact100-form-btn" type="submit" value="Submit">Submit</button>
+
+          
+
         </div>
+
           </div>
           
         </form>
         {}
+        <p></p>
+        <p></p>
+        <p></p>
+
         <div className="listing">
             
             {this.state.property1Submitted && this.state.property2Submitted? <Listing data={this.state.property1}/>:null}
+            <div class="margin">
             {this.state.property1Submitted && this.state.property2Submitted? <Listing data={this.state.property2}/>:null}
-            
+            </div>
         </div>
       </div>
+      </div>
     );
+ 
   }
 }
 

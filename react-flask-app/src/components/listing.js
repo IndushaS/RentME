@@ -28,14 +28,23 @@ export class Listing extends React.Component{
         return(
             <div>
             
-                <div>
-                    
-                    {address?<p>Address:{address.oneLine}</p>:null}
-                    {price?<p>Market Price:{price.saleAmt}</p>:null}
-                    {location?<p>Longitude:{location.longitude} Latitude:{location.latitude}</p>:null}
-                    {summary?<p>Type:{summary.propClass}</p>:null}
-                    {rooms?<p>Bedrooms:{rooms.beds} Bathrooms:{rooms.bathsTotal}</p>:null}
-                
+                <div> <table>
+                 <tr>Address:
+                  <td>   {address?<p>{address.oneLine}</p>:null}</td>
+                </tr>
+                  <tr>
+                     Market Price:
+                  <td>      {price?<p>{price.saleAmt}</p>:null}</td>                    </tr>
+
+                  <tr>Location:
+                  <td>     {location?<p>Longitude: {location.longitude} Latitude: {location.latitude}</p>:null}</td>                    </tr>
+
+                  <tr>Summary:
+                  <td>     {summary?<p>Type: {summary.propClass}</p>:null}</td>                    </tr>
+
+                  <tr>Features:
+                    <td>    {rooms?<p>Bedrooms: {rooms.beds} Bathrooms: {rooms.bathsTotal}</p>:null}</td>                    </tr>
+                    </table>  
                 </div>
             </div>  
            
