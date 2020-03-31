@@ -34,7 +34,7 @@ export class Listing extends React.Component {
                     </tr>
                     <tr>
                         Market Price:
-                  <td>      {price ? <p>{price.saleAmt}</p> : null}</td>
+                  <td>      {price ? <p>${price.saleAmt}</p> : null}</td>
                     </tr>
 
                     <tr>Location:
@@ -46,19 +46,19 @@ export class Listing extends React.Component {
                     </tr>
 
                     <tr>Monthly Payment:
-                    <td>    {monthlyStats ? <p>{Math.round(monthlyStats.monthlyPayments)}</p> : null}</td>
+                    <td>    {monthlyStats ? <p>${Math.round(monthlyStats.monthlyPayments)}</p> : null}</td>
                     </tr>
                     <tr>Monthly Profit:
-                    <td>    {monthlyStats ? <p>Monthly Profit: {Math.round(monthlyStats.monthlyProfit)}</p> : null}</td>
+                    <td>    {monthlyStats ? <p>${Math.round(monthlyStats.monthlyProfit)}</p> : null}</td>
                     </tr>
                     <tr>Monthly Revenue:
-                  <td>    {monthlyStats ? <p>{Math.round(monthlyStats.monthlyRevenue)} </p> : null}</td>
+                  <td>    {monthlyStats ? <p>${Math.round(monthlyStats.monthlyRevenue)} </p> : null}</td>
                     </tr>
                     <tr> Yearly Profit:
-                    <td>    {monthlyStats ? <p>{Math.round(monthlyStats.yearlyProfit)} </p> : null}</td>
+                    <td>    {monthlyStats ? <p>${Math.round(monthlyStats.yearlyProfit)} </p> : null}</td>
                     </tr>
                     <tr> Yearly Revenue:
-                    <td>    {monthlyStats ? <p>{Math.round(monthlyStats.yearlyRevenue)} </p> : null}</td>
+                    <td>    {monthlyStats ? <p>${Math.round(monthlyStats.yearlyRevenue)} </p> : null}</td>
                     </tr>
                 </table>
                 </div>

@@ -18,9 +18,6 @@ class Search extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     
   }
-  componentWillMount() {
-    fetch('/train');
-  }
   onSubmit(e) {
     var optimal1;
     var optimal2;
