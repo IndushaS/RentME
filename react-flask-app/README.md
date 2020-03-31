@@ -1,3 +1,15 @@
+# AirbnbME 
+
+## To run this project:
+### 1. download the repository
+### 2. locate the downloaded repository and then `cd react-flask-app`
+### 3. `yarn start-api` to start the flask backend
+### 4. `yarn start` to start the react app
+### 5. `yarn start` to start the react app
+### 6. copy and paste `http://127.0.0.1:5000/train` into a web browser to train the ML model for the first time
+### 7. check to see `model loaded` in flask app terminal
+### 8. Done! You may now enter addresses into the react web app and determine the optimal apartment for you.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
