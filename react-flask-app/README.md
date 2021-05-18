@@ -1,4 +1,7 @@
 # AirbnbME 
+OSINT web app to streamline house-hunting process by predicting potential rental value of homes using a
+Random Forest machine learning model trained using geographical, availability and privacy information
+
 
 ## To run this project:
 ### 1. download the repository
